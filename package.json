@@ -29,5 +29,12 @@
     "eslint-config-next": "16.1.1",
     "tailwindcss": "^4",
     "typescript": "^5"
+  },
+  "prisma": {
+    "schema": "prisma/schema.prisma"
+  },
+  "overrides": {
+    "@types/react": "19.2.5",
+    "@types/react-dom": "19.2.3"
   }
 }
