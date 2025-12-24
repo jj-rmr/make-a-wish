@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+:root {
+  /* Christmas light theme */
+  --background: #fffaf5;        /* warm snowy white */
+  --foreground: #1f2933;        /* deep evergreen text */
+
+  --christmas-red: #8f0f20;     /* classic holly red */
+  --christmas-green: #0f5132;   /* pine green */
+  --christmas-gold: #d4af37;    /* gold ornament */
+  --christmas-cream: #f7efe5;   /* soft snow */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-primary: var(--christmas-red);
+  --color-secondary: var(--christmas-green);
+  --color-accent: var(--christmas-gold);
+  --color-muted: var(--christmas-cream);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-primary: var(--font-amore-christmas);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0b1f16;
+    --foreground: #f1f5f2;
+
+    --christmas-red: #cb2a38;
+    --christmas-green: #2d6a4f;
+    --christmas-gold: #f1c453;
+    --christmas-cream: #1b2f24;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
